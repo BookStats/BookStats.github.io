@@ -1,0 +1,1097 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='goodreads_library_export' inline='true' name='federated.14w9wtt0p2qoml1eyue9x12gy31z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='goodreads_library_export' name='textscan.1pdjob404ywstc1gu8fpp0moamj2'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='D:/study/sp21/CS467/design3/goodreads_library_export.csv' dataRefreshTime='' directory='D:/study/sp21/CS467/design3' filename='C:/Users/asdre/AppData/Local/Temp/TableauTemp/0l5653815g5k8s19io76q0hiheyk/goodreads_library_export.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1pdjob404ywstc1gu8fpp0moamj2' name='goodreads_library_export.csv' table='[D:\study\sp21\CS467\design3\goodreads_library_export#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AE78:no:A1:AE78:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Book Id' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Author' ordinal='2' />
+            <column datatype='string' name='Author l-f' ordinal='3' />
+            <column datatype='string' name='Additional Authors' ordinal='4' />
+            <column datatype='integer' name='ISBN' ordinal='5' />
+            <column datatype='integer' name='ISBN13' ordinal='6' />
+            <column datatype='integer' name='My Rating' ordinal='7' />
+            <column datatype='real' name='Average Rating' ordinal='8' />
+            <column datatype='string' name='Publisher' ordinal='9' />
+            <column datatype='string' name='Binding' ordinal='10' />
+            <column datatype='integer' name='Number of Pages' ordinal='11' />
+            <column datatype='integer' name='Year Published' ordinal='12' />
+            <column datatype='integer' name='Original Publication Year' ordinal='13' />
+            <column datatype='date' name='Date Read' ordinal='14' />
+            <column datatype='date' name='Date Added' ordinal='15' />
+            <column datatype='string' name='Bookshelves' ordinal='16' />
+            <column datatype='string' name='Bookshelves with positions' ordinal='17' />
+            <column datatype='string' name='Exclusive Shelf' ordinal='18' />
+            <column datatype='string' name='My Review' ordinal='19' />
+            <column datatype='string' name='Spoiler' ordinal='20' />
+            <column datatype='string' name='Private Notes' ordinal='21' />
+            <column datatype='integer' name='Read Count' ordinal='22' />
+            <column datatype='string' name='Recommended For' ordinal='23' />
+            <column datatype='string' name='Recommended By' ordinal='24' />
+            <column datatype='integer' name='Owned Copies' ordinal='25' />
+            <column datatype='string' name='Original Purchase Date' ordinal='26' />
+            <column datatype='string' name='Original Purchase Location' ordinal='27' />
+            <column datatype='string' name='Condition' ordinal='28' />
+            <column datatype='string' name='Condition Description' ordinal='29' />
+            <column datatype='string' name='BCID' ordinal='30' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1pdjob404ywstc1gu8fpp0moamj2' name='goodreads_library_export.csv' table='[D:\study\sp21\CS467\design3\goodreads_library_export#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AE78:no:A1:AE78:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Book Id' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Author' ordinal='2' />
+            <column datatype='string' name='Author l-f' ordinal='3' />
+            <column datatype='string' name='Additional Authors' ordinal='4' />
+            <column datatype='integer' name='ISBN' ordinal='5' />
+            <column datatype='integer' name='ISBN13' ordinal='6' />
+            <column datatype='integer' name='My Rating' ordinal='7' />
+            <column datatype='real' name='Average Rating' ordinal='8' />
+            <column datatype='string' name='Publisher' ordinal='9' />
+            <column datatype='string' name='Binding' ordinal='10' />
+            <column datatype='integer' name='Number of Pages' ordinal='11' />
+            <column datatype='integer' name='Year Published' ordinal='12' />
+            <column datatype='integer' name='Original Publication Year' ordinal='13' />
+            <column datatype='date' name='Date Read' ordinal='14' />
+            <column datatype='date' name='Date Added' ordinal='15' />
+            <column datatype='string' name='Bookshelves' ordinal='16' />
+            <column datatype='string' name='Bookshelves with positions' ordinal='17' />
+            <column datatype='string' name='Exclusive Shelf' ordinal='18' />
+            <column datatype='string' name='My Review' ordinal='19' />
+            <column datatype='string' name='Spoiler' ordinal='20' />
+            <column datatype='string' name='Private Notes' ordinal='21' />
+            <column datatype='integer' name='Read Count' ordinal='22' />
+            <column datatype='string' name='Recommended For' ordinal='23' />
+            <column datatype='string' name='Recommended By' ordinal='24' />
+            <column datatype='integer' name='Owned Copies' ordinal='25' />
+            <column datatype='string' name='Original Purchase Date' ordinal='26' />
+            <column datatype='string' name='Original Purchase Location' ordinal='27' />
+            <column datatype='string' name='Condition' ordinal='28' />
+            <column datatype='string' name='Condition Description' ordinal='29' />
+            <column datatype='string' name='BCID' ordinal='30' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AE78:no:A1:AE78:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Book Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Book Id]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Book Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author l-f</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author l-f]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Author l-f</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Additional Authors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Additional Authors]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Additional Authors</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISBN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ISBN]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>ISBN</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISBN13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ISBN13]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>ISBN13</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>My Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[My Rating]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>My Rating</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Rating]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Average Rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Publisher]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Publisher</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Binding</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Binding]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Binding</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Pages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Pages]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Number of Pages</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Published</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Published]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Year Published</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Publication Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Original Publication Year]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Original Publication Year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Read</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Read]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Date Read</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Added</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Added]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Date Added</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bookshelves</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bookshelves]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Bookshelves</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bookshelves with positions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bookshelves with positions]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Bookshelves with positions</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exclusive Shelf</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exclusive Shelf]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Exclusive Shelf</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>My Review</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[My Review]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>My Review</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Spoiler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Spoiler]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Spoiler</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Private Notes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Private Notes]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Private Notes</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Read Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Read Count]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Read Count</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recommended For</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Recommended For]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Recommended For</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recommended By</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Recommended By]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Recommended By</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Owned Copies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Owned Copies]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Owned Copies</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Purchase Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Original Purchase Date]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Original Purchase Date</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Purchase Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Original Purchase Location]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Original Purchase Location</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Condition</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition Description]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Condition Description</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BCID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BCID]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>BCID</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[avg:Number of Pages:qk]&quot;' value='Average book length' />
+          <alias key='&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[max:Number of Pages:qk]&quot;' value='Pages of longest book' />
+          <alias key='&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[min:Number of Pages:qk]&quot;' value='Pages of shortest book' />
+          <alias key='&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[sum:Number of Pages:qk]&quot;' value='Total pages read' />
+        </aliases>
+      </column>
+      <column caption='Bcid' datatype='string' hidden='true' name='[BCID]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Book Id]' role='dimension' type='ordinal' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[Condition Description]' role='dimension' type='nominal' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[Condition]' role='dimension' type='nominal' />
+      <column caption='Isbn13' datatype='integer' name='[ISBN13]' role='measure' type='quantitative' />
+      <column caption='Isbn' datatype='integer' name='[ISBN]' role='measure' type='quantitative' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[My Review]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Pages]' role='measure' type='quantitative' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[Original Purchase Date]' role='dimension' type='nominal' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[Original Purchase Location]' role='dimension' type='nominal' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[Private Notes]' role='dimension' type='nominal' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[Recommended By]' role='dimension' type='nominal' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[Recommended For]' role='dimension' type='nominal' />
+      <column datatype='string' default-role='measure' default-type='ordinal' hidden='true' name='[Spoiler]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year Published]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='goodreads_library_export.csv' datatype='table' name='[__tableau_internal_object_id__].[goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0]' role='measure' type='quantitative' />
+      <column-instance column='[Number of Pages]' derivation='Avg' name='[avg:Number of Pages:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Pages]' derivation='Max' name='[max:Number of Pages:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Pages]' derivation='Min' name='[min:Number of Pages:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Pages]' derivation='Sum' name='[sum:Number of Pages:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='goodreads_library_export.csv' id='goodreads_library_export.csv_6BFCA15B563D4C8995F3745CFCCD29D0'>
+            <properties context=''>
+              <relation connection='textscan.1pdjob404ywstc1gu8fpp0moamj2' name='goodreads_library_export.csv' table='[D:\study\sp21\CS467\design3\goodreads_library_export#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:AE78:no:A1:AE78:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Book Id' ordinal='0' />
+                  <column datatype='string' name='Title' ordinal='1' />
+                  <column datatype='string' name='Author' ordinal='2' />
+                  <column datatype='string' name='Author l-f' ordinal='3' />
+                  <column datatype='string' name='Additional Authors' ordinal='4' />
+                  <column datatype='integer' name='ISBN' ordinal='5' />
+                  <column datatype='integer' name='ISBN13' ordinal='6' />
+                  <column datatype='integer' name='My Rating' ordinal='7' />
+                  <column datatype='real' name='Average Rating' ordinal='8' />
+                  <column datatype='string' name='Publisher' ordinal='9' />
+                  <column datatype='string' name='Binding' ordinal='10' />
+                  <column datatype='integer' name='Number of Pages' ordinal='11' />
+                  <column datatype='integer' name='Year Published' ordinal='12' />
+                  <column datatype='integer' name='Original Publication Year' ordinal='13' />
+                  <column datatype='date' name='Date Read' ordinal='14' />
+                  <column datatype='date' name='Date Added' ordinal='15' />
+                  <column datatype='string' name='Bookshelves' ordinal='16' />
+                  <column datatype='string' name='Bookshelves with positions' ordinal='17' />
+                  <column datatype='string' name='Exclusive Shelf' ordinal='18' />
+                  <column datatype='string' name='My Review' ordinal='19' />
+                  <column datatype='string' name='Spoiler' ordinal='20' />
+                  <column datatype='string' name='Private Notes' ordinal='21' />
+                  <column datatype='integer' name='Read Count' ordinal='22' />
+                  <column datatype='string' name='Recommended For' ordinal='23' />
+                  <column datatype='string' name='Recommended By' ordinal='24' />
+                  <column datatype='integer' name='Owned Copies' ordinal='25' />
+                  <column datatype='string' name='Original Purchase Date' ordinal='26' />
+                  <column datatype='string' name='Original Purchase Location' ordinal='27' />
+                  <column datatype='string' name='Condition' ordinal='28' />
+                  <column datatype='string' name='Condition Description' ordinal='29' />
+                  <column datatype='string' name='BCID' ordinal='30' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='goodreads_library_export' name='federated.14w9wtt0p2qoml1eyue9x12gy31z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w9wtt0p2qoml1eyue9x12gy31z'>
+            <column caption='COUNT(MONTH([Date Read]))' datatype='integer' name='[Calculation_802485184963002368]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='COUNT(MONTH([Date Read]))' />
+            </column>
+            <column datatype='date' name='[Date Read]' role='dimension' type='ordinal' />
+            <column-instance column='[Date Read]' derivation='Month' name='[mn:Date Read:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_802485184963002368]' derivation='User' name='[usr:Calculation_802485184963002368:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Read]' derivation='Year' name='[yr:Date Read:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[yr:Date Read:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#787878'>Month:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.14w9wtt0p2qoml1eyue9x12gy31z].[mn:Date Read:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.14w9wtt0p2qoml1eyue9x12gy31z].[usr:Calculation_802485184963002368:qk]> Books]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[usr:Calculation_802485184963002368:qk]</rows>
+        <cols>([federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok] / [federated.14w9wtt0p2qoml1eyue9x12gy31z].[mn:Date Read:ok])</cols>
+      </table>
+      <simple-id uuid='{65A24B16-4ECA-4475-8870-6983CABD5465}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='goodreads_library_export' name='federated.14w9wtt0p2qoml1eyue9x12gy31z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w9wtt0p2qoml1eyue9x12gy31z'>
+            <column datatype='date' name='[Date Read]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Pages]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Pages]' derivation='Avg' name='[avg:Number of Pages:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Pages]' derivation='Max' name='[max:Number of Pages:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Pages]' derivation='Min' name='[min:Number of Pages:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Pages]' derivation='Sum' name='[sum:Number of Pages:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Read]' derivation='Year' name='[yr:Date Read:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[max:Number of Pages:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[min:Number of Pages:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[sum:Number of Pages:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[avg:Number of Pages:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[max:Number of Pages:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[min:Number of Pages:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[sum:Number of Pages:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14w9wtt0p2qoml1eyue9x12gy31z].[avg:Number of Pages:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[yr:Date Read:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[:Measure Names]</column>
+            <column>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[:Measure Names]' value='31' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[:Measure Names]' value='332' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[Multiple Values]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>&lt;</run>
+                <run fontcolor='#787878'>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[:Measure Names]</run>
+                <run fontcolor='#787878'>&gt;:&#9;&lt;IF 1=2 THEN &apos;as&apos; END&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{69D9AF35-9279-4E6C-85D4-267AE87E5B26}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[mn:Date Read:ok]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:BCID:nk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Added:ok]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{8C32AD48-F38C-4CE7-91AD-30AA98232F4B}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14w9wtt0p2qoml1eyue9x12gy31z].[yr:Date Read:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 1]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184973606924:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184973635598:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184973717519:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184974037008:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184974102545:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184974622738:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184974811155:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184974848021:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184975015958:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184975097879:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184975155224:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184975233049:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184975269914:nk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184975376412:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184976818212:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184978640934:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184978800679:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[none:Calculation_802485184978993192:qk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[usr:Calculation_802485184975364123:nk]</field>
+            <field>[federated.14w9wtt0p2qoml1eyue9x12gy31z].[usr:Calculation_802485184976330785:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E6FC621C-E00D-4D6B-8C0A-8CFCECE28A54}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      7b+hSVtWZxlGPAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='128' name='Sheet 2' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
