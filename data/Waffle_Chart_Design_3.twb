@@ -1,0 +1,1712 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0114.0916                               -->
+<workbook original-version='18.1' source-build='2020.4.1 (20204.21.0114.0916)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Waffle_Chart_Design_3' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Waffle_Chart_Template)' inline='true' name='federated.0ap4yo208innyy19pmo5u0tq67kc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Waffle_Chart_Template' name='excel-direct.0ybjvrv063hmof1b0l1f21n1g1bn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/josep/Desktop/Waffle_Chart_Template.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Shail_Goodreads_Library_Data' name='excel-direct.1mzx8ew1h1dm0b11xeebc06nwnpm'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/josep/Desktop/Goodreads_Library_Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0ybjvrv063hmof1b0l1f21n1g1bn' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row' ordinal='0' />
+            <column datatype='integer' name='Column' ordinal='1' />
+            <column datatype='real' name='Percentage' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0ybjvrv063hmof1b0l1f21n1g1bn' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row' ordinal='0' />
+            <column datatype='integer' name='Column' ordinal='1' />
+            <column datatype='real' name='Percentage' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C101:no:A1:C101:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Row</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_68071A57DBE34662AB6D5B627BA9C335]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Column</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Column]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Column</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_68071A57DBE34662AB6D5B627BA9C335]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_68071A57DBE34662AB6D5B627BA9C335]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='RATING COLOR' datatype='string' name='[Calculation_1191272496644206600]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] THEN &quot;0&quot;&#10;ELSEIF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy)_1191272496643944454] THEN &quot;1&quot;&#10;ELSEIF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy)_1191272496643944454] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[3 RATING RATIO (copy)_1191272496643809285] THEN &quot;2&quot;&#10;ELSEIF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy)_1191272496643944454] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[3 RATING RATIO (copy)_1191272496643809285] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[4 RATING RATIO (copy)_1191272496643764228] THEN &quot;3&quot;&#10;ELSEIF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy)_1191272496643944454] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[3 RATING RATIO (copy)_1191272496643809285] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[4 RATING RATIO (copy)_1191272496643764228] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[5 RATING RATIO (copy)_1191272496643702787] THEN &quot;4&quot;&#10;ELSE &quot;5&quot; END' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Column]' role='dimension' type='ordinal' />
+      <column datatype='real' default-format='p0%' name='[Percentage]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Row]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_68071A57DBE34662AB6D5B627BA9C335]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1191272496644206600]' derivation='User' name='[usr:Calculation_1191272496644206600:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/josep/Documents/My Tableau Repository/Datasources/Sheet1 (Waffle_Chart_Template).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/31/2021 05:56:16 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Sheet1 (Waffle_Chart_Template)' increment-value='%null%' refresh-type='create' rows-inserted='100' timestamp-start='2021-03-31 17:56:16.739' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Row</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Row]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Row</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Column</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Column]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Column</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_1191272496644206600:nk]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;0&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;4&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;5&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;3&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;2&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='federated.1r9fma00z5yqpa14jtngj0vlgjyk'>
+        <column caption='0 RATING PERCENTAGE' datatype='real' name='[2 RATING RATIO (copy) (copy)_1191272496643964935]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='COUNT(IF[My Rating] = 0 THEN [Title] END) / COUNT([Title])' />
+        </column>
+        <column caption='1 RATING PERCENTAGE' datatype='real' name='[2 RATING RATIO (copy)_1191272496643944454]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='COUNT(IF[My Rating] = 1 THEN [Title] END) / COUNT([Title])' />
+        </column>
+        <column caption='2 RATING PERCENTAGE' datatype='real' name='[3 RATING RATIO (copy)_1191272496643809285]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='COUNT(IF[My Rating] = 2 THEN [Title] END) / COUNT([Title])' />
+        </column>
+        <column caption='3 RATING PERCENTAGE' datatype='real' name='[4 RATING RATIO (copy)_1191272496643764228]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='COUNT(IF[My Rating] = 3 THEN [Title] END) / COUNT([Title])' />
+        </column>
+        <column caption='4 RATING PERCENTAGE' datatype='real' name='[5 RATING RATIO (copy)_1191272496643702787]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='COUNT(IF[My Rating] = 4 THEN [Title] END) / COUNT([Title])' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_68071A57DBE34662AB6D5B627BA9C335'>
+            <properties context=''>
+              <relation connection='excel-direct.0ybjvrv063hmof1b0l1f21n1g1bn' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Row' ordinal='0' />
+                  <column datatype='integer' name='Column' ordinal='1' />
+                  <column datatype='real' name='Percentage' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Goodreads_Library_Data (Goodreads_Library_Data)' inline='true' name='federated.1r9fma00z5yqpa14jtngj0vlgjyk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Goodreads_Library_Data' name='excel-direct.0loez5u1fl3c6n12d3yqs10zjdsq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/josep/Desktop/Goodreads_Library_Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0loez5u1fl3c6n12d3yqs10zjdsq' name='Goodreads_Library_Data' table='[Goodreads_Library_Data$]' type='table'>
+          <columns gridOrigin='A1:AE60:no:A1:AE60:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Book Id' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Author' ordinal='2' />
+            <column datatype='string' name='Author l-f' ordinal='3' />
+            <column datatype='string' name='Additional Authors' ordinal='4' />
+            <column datatype='string' name='ISBN' ordinal='5' />
+            <column datatype='integer' name='ISBN13' ordinal='6' />
+            <column datatype='integer' name='My Rating' ordinal='7' />
+            <column datatype='real' name='Average Rating' ordinal='8' />
+            <column datatype='string' name='Publisher' ordinal='9' />
+            <column datatype='string' name='Binding' ordinal='10' />
+            <column datatype='integer' name='Number of Pages' ordinal='11' />
+            <column datatype='integer' name='Year Published' ordinal='12' />
+            <column datatype='integer' name='Original Publication Year' ordinal='13' />
+            <column datatype='date' name='Date Read' ordinal='14' />
+            <column datatype='date' name='Date Added' ordinal='15' />
+            <column datatype='string' name='Bookshelves' ordinal='16' />
+            <column datatype='string' name='Bookshelves with positions' ordinal='17' />
+            <column datatype='string' name='Exclusive Shelf' ordinal='18' />
+            <column datatype='string' name='My Review' ordinal='19' />
+            <column datatype='string' name='Spoiler' ordinal='20' />
+            <column datatype='string' name='Private Notes' ordinal='21' />
+            <column datatype='integer' name='Read Count' ordinal='22' />
+            <column datatype='string' name='Recommended For' ordinal='23' />
+            <column datatype='string' name='Recommended By' ordinal='24' />
+            <column datatype='integer' name='Owned Copies' ordinal='25' />
+            <column datatype='string' name='Original Purchase Date' ordinal='26' />
+            <column datatype='string' name='Original Purchase Location' ordinal='27' />
+            <column datatype='string' name='Condition' ordinal='28' />
+            <column datatype='string' name='Condition Description' ordinal='29' />
+            <column datatype='string' name='BCID' ordinal='30' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0loez5u1fl3c6n12d3yqs10zjdsq' name='Goodreads_Library_Data' table='[Goodreads_Library_Data$]' type='table'>
+          <columns gridOrigin='A1:AE60:no:A1:AE60:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Book Id' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Author' ordinal='2' />
+            <column datatype='string' name='Author l-f' ordinal='3' />
+            <column datatype='string' name='Additional Authors' ordinal='4' />
+            <column datatype='string' name='ISBN' ordinal='5' />
+            <column datatype='integer' name='ISBN13' ordinal='6' />
+            <column datatype='integer' name='My Rating' ordinal='7' />
+            <column datatype='real' name='Average Rating' ordinal='8' />
+            <column datatype='string' name='Publisher' ordinal='9' />
+            <column datatype='string' name='Binding' ordinal='10' />
+            <column datatype='integer' name='Number of Pages' ordinal='11' />
+            <column datatype='integer' name='Year Published' ordinal='12' />
+            <column datatype='integer' name='Original Publication Year' ordinal='13' />
+            <column datatype='date' name='Date Read' ordinal='14' />
+            <column datatype='date' name='Date Added' ordinal='15' />
+            <column datatype='string' name='Bookshelves' ordinal='16' />
+            <column datatype='string' name='Bookshelves with positions' ordinal='17' />
+            <column datatype='string' name='Exclusive Shelf' ordinal='18' />
+            <column datatype='string' name='My Review' ordinal='19' />
+            <column datatype='string' name='Spoiler' ordinal='20' />
+            <column datatype='string' name='Private Notes' ordinal='21' />
+            <column datatype='integer' name='Read Count' ordinal='22' />
+            <column datatype='string' name='Recommended For' ordinal='23' />
+            <column datatype='string' name='Recommended By' ordinal='24' />
+            <column datatype='integer' name='Owned Copies' ordinal='25' />
+            <column datatype='string' name='Original Purchase Date' ordinal='26' />
+            <column datatype='string' name='Original Purchase Location' ordinal='27' />
+            <column datatype='string' name='Condition' ordinal='28' />
+            <column datatype='string' name='Condition Description' ordinal='29' />
+            <column datatype='string' name='BCID' ordinal='30' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AE60:no:A1:AE60:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Book Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Book Id]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Book Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Author]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author l-f</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Author l-f]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Author l-f</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Additional Authors</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Additional Authors]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Additional Authors</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISBN</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ISBN]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>ISBN</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISBN13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ISBN13]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>ISBN13</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>My Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[My Rating]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>My Rating</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Rating]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Average Rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publisher</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Publisher]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Publisher</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Binding</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Binding]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Binding</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Pages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Pages]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Number of Pages</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Published</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Published]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Year Published</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Publication Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Original Publication Year]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Original Publication Year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Read</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date Read]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Date Read</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Added</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date Added]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Date Added</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bookshelves</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bookshelves]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Bookshelves</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bookshelves with positions</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bookshelves with positions]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Bookshelves with positions</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exclusive Shelf</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Exclusive Shelf]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Exclusive Shelf</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>My Review</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[My Review]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>My Review</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Spoiler</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Spoiler]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Spoiler</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Private Notes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Private Notes]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Private Notes</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Read Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Read Count]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Read Count</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recommended For</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Recommended For]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Recommended For</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recommended By</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Recommended By]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Recommended By</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Owned Copies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Owned Copies]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Owned Copies</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Purchase Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Original Purchase Date]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Original Purchase Date</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Purchase Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Original Purchase Location]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Original Purchase Location</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Condition]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Condition</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Condition Description]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>Condition Description</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BCID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BCID]</local-name>
+            <parent-name>[Goodreads_Library_Data]</parent-name>
+            <remote-alias>BCID</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='0 RATING PERCENTAGE' datatype='real' name='[2 RATING RATIO (copy) (copy)_1191272496643964935]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 0 THEN [Title] END) / COUNT([Title])' />
+      </column>
+      <column caption='1 RATING PERCENTAGE' datatype='real' name='[2 RATING RATIO (copy)_1191272496643944454]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 1 THEN [Title] END) / COUNT([Title])' />
+      </column>
+      <column caption='2 RATING PERCENTAGE' datatype='real' name='[3 RATING RATIO (copy)_1191272496643809285]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 2 THEN [Title] END) / COUNT([Title])' />
+      </column>
+      <column caption='3 RATING PERCENTAGE' datatype='real' name='[4 RATING RATIO (copy)_1191272496643764228]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 3 THEN [Title] END) / COUNT([Title])' />
+      </column>
+      <column caption='4 RATING PERCENTAGE' datatype='real' name='[5 RATING RATIO (copy)_1191272496643702787]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 4 THEN [Title] END) / COUNT([Title])' />
+      </column>
+      <column caption='Bcid' datatype='string' name='[BCID]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Book Id]' role='dimension' type='ordinal' />
+      <column caption='5 RATING PERCENTAGE' datatype='real' name='[Calculation_1191272496642625538]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 5 THEN [Title] END) / COUNT([Title])' />
+      </column>
+      <column caption='0 RATING COUNT' datatype='integer' name='[Calculation_2179460771391037464]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 0 THEN [Title] END)' />
+      </column>
+      <column caption='1 RATING COUNT' datatype='integer' name='[Calculation_2179460771391385625]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 1 THEN [Title] END)' />
+      </column>
+      <column caption='2 RATING COUNT' datatype='integer' name='[Calculation_2179460771391459354]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 2 THEN [Title] END)' />
+      </column>
+      <column caption='3 RATING COUNT' datatype='integer' name='[Calculation_2179460771391512603]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 3 THEN [Title] END)' />
+      </column>
+      <column caption='4 RATING COUNT' datatype='integer' name='[Calculation_2179460771391549468]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 4 THEN [Title] END)' />
+      </column>
+      <column caption='5 RATING COUNT' datatype='integer' name='[Calculation_2179460771391590429]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[My Rating] = 5 THEN [Title] END)' />
+      </column>
+      <column caption='Isbn13' datatype='integer' name='[ISBN13]' role='measure' type='quantitative' />
+      <column caption='Isbn' datatype='string' name='[ISBN]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year Published]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Goodreads_Library_Data' datatype='table' name='[__tableau_internal_object_id__].[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/josep/Documents/My Tableau Repository/Datasources/Goodreads_Library_Data (Goodreads_Library_Data).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/31/2021 05:55:46 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Goodreads_Library_Data (Goodreads_Library_Data)' increment-value='%null%' refresh-type='create' rows-inserted='59' timestamp-start='2021-03-31 17:55:46.869' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Book Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Book Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Book Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Author</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Author l-f</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Author l-f]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Author l-f</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Additional Authors</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Additional Authors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Additional Authors</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISBN</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISBN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISBN</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISBN13</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ISBN13]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISBN13</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>My Rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[My Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>My Rating</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average Rating</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Publisher</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Publisher]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Publisher</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Binding</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Binding]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Binding</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Pages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Pages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Pages</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year Published</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year Published]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year Published</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Original Publication Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Original Publication Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Original Publication Year</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Read</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Read]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Read</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Added</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Added</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bookshelves</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bookshelves]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bookshelves</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bookshelves with positions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bookshelves with positions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bookshelves with positions</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exclusive Shelf</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Exclusive Shelf]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exclusive Shelf</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>My Review</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[My Review]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>My Review</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Spoiler</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Spoiler]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Spoiler</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Private Notes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Private Notes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Private Notes</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Read Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Read Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Read Count</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recommended For</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Recommended For]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recommended For</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recommended By</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Recommended By]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recommended By</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Owned Copies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Owned Copies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Owned Copies</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Original Purchase Date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Original Purchase Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Original Purchase Date</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Original Purchase Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Original Purchase Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Original Purchase Location</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition Description</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BCID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BCID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BCID</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Goodreads_Library_Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Goodreads_Library_Data' id='Goodreads!Library!Data_43537498EDDD4DBCB0E81C4D8F8E4962'>
+            <properties context=''>
+              <relation connection='excel-direct.0loez5u1fl3c6n12d3yqs10zjdsq' name='Goodreads_Library_Data' table='[Goodreads_Library_Data$]' type='table'>
+                <columns gridOrigin='A1:AE60:no:A1:AE60:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Book Id' ordinal='0' />
+                  <column datatype='string' name='Title' ordinal='1' />
+                  <column datatype='string' name='Author' ordinal='2' />
+                  <column datatype='string' name='Author l-f' ordinal='3' />
+                  <column datatype='string' name='Additional Authors' ordinal='4' />
+                  <column datatype='string' name='ISBN' ordinal='5' />
+                  <column datatype='integer' name='ISBN13' ordinal='6' />
+                  <column datatype='integer' name='My Rating' ordinal='7' />
+                  <column datatype='real' name='Average Rating' ordinal='8' />
+                  <column datatype='string' name='Publisher' ordinal='9' />
+                  <column datatype='string' name='Binding' ordinal='10' />
+                  <column datatype='integer' name='Number of Pages' ordinal='11' />
+                  <column datatype='integer' name='Year Published' ordinal='12' />
+                  <column datatype='integer' name='Original Publication Year' ordinal='13' />
+                  <column datatype='date' name='Date Read' ordinal='14' />
+                  <column datatype='date' name='Date Added' ordinal='15' />
+                  <column datatype='string' name='Bookshelves' ordinal='16' />
+                  <column datatype='string' name='Bookshelves with positions' ordinal='17' />
+                  <column datatype='string' name='Exclusive Shelf' ordinal='18' />
+                  <column datatype='string' name='My Review' ordinal='19' />
+                  <column datatype='string' name='Spoiler' ordinal='20' />
+                  <column datatype='string' name='Private Notes' ordinal='21' />
+                  <column datatype='integer' name='Read Count' ordinal='22' />
+                  <column datatype='string' name='Recommended For' ordinal='23' />
+                  <column datatype='string' name='Recommended By' ordinal='24' />
+                  <column datatype='integer' name='Owned Copies' ordinal='25' />
+                  <column datatype='string' name='Original Purchase Date' ordinal='26' />
+                  <column datatype='string' name='Original Purchase Location' ordinal='27' />
+                  <column datatype='string' name='Condition' ordinal='28' />
+                  <column datatype='string' name='Condition Description' ordinal='29' />
+                  <column datatype='string' name='BCID' ordinal='30' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Waffle_Chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Book Genre Breakdown (&lt;</run>
+            <run>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[yr:Date Read:ok]</run>
+            <run>&gt;)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Waffle_Chart_Template)' name='federated.0ap4yo208innyy19pmo5u0tq67kc' />
+            <datasource caption='Goodreads_Library_Data (Goodreads_Library_Data)' name='federated.1r9fma00z5yqpa14jtngj0vlgjyk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ap4yo208innyy19pmo5u0tq67kc'>
+            <column caption='RATING COLOR' datatype='string' name='[Calculation_1191272496644206600]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] THEN &quot;0&quot;&#10;ELSEIF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy)_1191272496643944454] THEN &quot;1&quot;&#10;ELSEIF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy)_1191272496643944454] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[3 RATING RATIO (copy)_1191272496643809285] THEN &quot;2&quot;&#10;ELSEIF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy)_1191272496643944454] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[3 RATING RATIO (copy)_1191272496643809285] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[4 RATING RATIO (copy)_1191272496643764228] THEN &quot;3&quot;&#10;ELSEIF AVG([Percentage]) &lt;= [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy) (copy)_1191272496643964935] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[2 RATING RATIO (copy)_1191272496643944454] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[3 RATING RATIO (copy)_1191272496643809285] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[4 RATING RATIO (copy)_1191272496643764228] + [federated.1r9fma00z5yqpa14jtngj0vlgjyk].[5 RATING RATIO (copy)_1191272496643702787] THEN &quot;4&quot;&#10;ELSE &quot;5&quot; END' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Column]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0%' name='[Percentage]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Row]' role='dimension' type='ordinal' />
+            <column-instance column='[Column]' derivation='None' name='[none:Column:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Percentage]' derivation='None' name='[none:Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Row]' derivation='None' name='[none:Row:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Percentage]' derivation='Sum' name='[sum:Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1191272496644206600]' derivation='User' name='[usr:Calculation_1191272496644206600:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1r9fma00z5yqpa14jtngj0vlgjyk'>
+            <column caption='0 RATING PERCENTAGE' datatype='real' name='[2 RATING RATIO (copy) (copy)_1191272496643964935]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 0 THEN [Title] END) / COUNT([Title])' />
+            </column>
+            <column caption='1 RATING PERCENTAGE' datatype='real' name='[2 RATING RATIO (copy)_1191272496643944454]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 1 THEN [Title] END) / COUNT([Title])' />
+            </column>
+            <column caption='2 RATING PERCENTAGE' datatype='real' name='[3 RATING RATIO (copy)_1191272496643809285]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 2 THEN [Title] END) / COUNT([Title])' />
+            </column>
+            <column caption='3 RATING PERCENTAGE' datatype='real' name='[4 RATING RATIO (copy)_1191272496643764228]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 3 THEN [Title] END) / COUNT([Title])' />
+            </column>
+            <column caption='4 RATING PERCENTAGE' datatype='real' name='[5 RATING RATIO (copy)_1191272496643702787]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 4 THEN [Title] END) / COUNT([Title])' />
+            </column>
+            <column caption='5 RATING PERCENTAGE' datatype='real' name='[Calculation_1191272496642625538]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 5 THEN [Title] END) / COUNT([Title])' />
+            </column>
+            <column caption='0 RATING COUNT' datatype='integer' name='[Calculation_2179460771391037464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 0 THEN [Title] END)' />
+            </column>
+            <column caption='1 RATING COUNT' datatype='integer' name='[Calculation_2179460771391385625]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 1 THEN [Title] END)' />
+            </column>
+            <column caption='2 RATING COUNT' datatype='integer' name='[Calculation_2179460771391459354]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 2 THEN [Title] END)' />
+            </column>
+            <column caption='3 RATING COUNT' datatype='integer' name='[Calculation_2179460771391512603]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 3 THEN [Title] END)' />
+            </column>
+            <column caption='4 RATING COUNT' datatype='integer' name='[Calculation_2179460771391549468]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 4 THEN [Title] END)' />
+            </column>
+            <column caption='5 RATING COUNT' datatype='integer' name='[Calculation_2179460771391590429]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[My Rating] = 5 THEN [Title] END)' />
+            </column>
+            <column datatype='date' name='[Date Read]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[My Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year Published]' role='dimension' type='quantitative' />
+            <column-instance column='[Year Published]' derivation='Attribute' name='[attr:Year Published:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[My Rating]' derivation='Avg' name='[avg:My Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Title]' derivation='Count' name='[cnt:Title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2 RATING RATIO (copy) (copy)_1191272496643964935]' derivation='User' name='[usr:2 RATING RATIO (copy) (copy)_1191272496643964935:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2 RATING RATIO (copy)_1191272496643944454]' derivation='User' name='[usr:2 RATING RATIO (copy)_1191272496643944454:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[3 RATING RATIO (copy)_1191272496643809285]' derivation='User' name='[usr:3 RATING RATIO (copy)_1191272496643809285:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[4 RATING RATIO (copy)_1191272496643764228]' derivation='User' name='[usr:4 RATING RATIO (copy)_1191272496643764228:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[5 RATING RATIO (copy)_1191272496643702787]' derivation='User' name='[usr:5 RATING RATIO (copy)_1191272496643702787:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1191272496642625538]' derivation='User' name='[usr:Calculation_1191272496642625538:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2179460771391037464]' derivation='User' name='[usr:Calculation_2179460771391037464:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2179460771391385625]' derivation='User' name='[usr:Calculation_2179460771391385625:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2179460771391459354]' derivation='User' name='[usr:Calculation_2179460771391459354:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2179460771391512603]' derivation='User' name='[usr:Calculation_2179460771391512603:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2179460771391549468]' derivation='User' name='[usr:Calculation_2179460771391549468:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2179460771391590429]' derivation='User' name='[usr:Calculation_2179460771391590429:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Read]' derivation='Year' name='[yr:Date Read:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Percentage:qk]' included-values='in-range'>
+            <min>0.01</min>
+            <max>1.0</max>
+          </filter>
+          <natural-sort column='[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Row:ok]' direction='DESC' />
+          <manual-sort column='[federated.0ap4yo208innyy19pmo5u0tq67kc].[usr:Calculation_1191272496644206600:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;5&quot;</bucket>
+              <bucket>&quot;4&quot;</bucket>
+              <bucket>&quot;3&quot;</bucket>
+              <bucket>&quot;2&quot;</bucket>
+              <bucket>&quot;0&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[yr:Date Read:ok]'>
+            <groupfilter function='level-members' level='[yr:Date Read:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Percentage:qk]</column>
+            <column>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[yr:Date Read:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Row:ok]' value='52' />
+            <format attr='width' field='[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Column:ok]' value='54' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_1191272496642625538:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:5 RATING RATIO (copy)_1191272496643702787:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:4 RATING RATIO (copy)_1191272496643764228:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy)_1191272496643944454:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:3 RATING RATIO (copy)_1191272496643809285:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy) (copy)_1191272496643964935:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Row:ok]' value='false' />
+            <format attr='display' field='[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Column:ok]' value='false' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:5 RATING RATIO (copy)_1191272496643702787:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:4 RATING RATIO (copy)_1191272496643764228:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:3 RATING RATIO (copy)_1191272496643809285:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy)_1191272496643944454:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy) (copy)_1191272496643964935:qk]' value='p0.00%' />
+            <format attr='text-orientation' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy) (copy)_1191272496643964935:qk]' value='0' />
+            <format attr='text-format' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_1191272496642625538:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='div-level' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0ap4yo208innyy19pmo5u0tq67kc].[usr:Calculation_1191272496644206600:nk]' value='Genres' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[yr:Date Read:ok]' value='Year' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0ap4yo208innyy19pmo5u0tq67kc].[usr:Calculation_1191272496644206600:nk]' />
+              <tooltip column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[attr:Year Published:qk]' />
+              <tooltip column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_1191272496642625538:qk]' />
+              <tooltip column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:5 RATING RATIO (copy)_1191272496643702787:qk]' />
+              <tooltip column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:4 RATING RATIO (copy)_1191272496643764228:qk]' />
+              <tooltip column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:3 RATING RATIO (copy)_1191272496643809285:qk]' />
+              <tooltip column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy)_1191272496643944454:qk]' />
+              <tooltip column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy) (copy)_1191272496643964935:qk]' />
+              <lod column='[federated.0ap4yo208innyy19pmo5u0tq67kc].[sum:Percentage:qk]' />
+              <lod column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391037464:qk]' />
+              <lod column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391385625:qk]' />
+              <lod column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391459354:qk]' />
+              <lod column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391512603:qk]' />
+              <lod column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391549468:qk]' />
+              <lod column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391590429:qk]' />
+              <lod column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[avg:My Rating:qk]' />
+              <lod column='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[cnt:Title:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'><![CDATA[RATING COLOR: 	 <[federated.0ap4yo208innyy19pmo5u0tq67kc].[usr:Calculation_1191272496644206600:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[Total Number of Books Read:	 <[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[cnt:Title:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[5 Rating:  	 <[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391590429:qk]> (<[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_1191272496642625538:qk]>)]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[4 Rating: 	 <[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391549468:qk]> (<[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:5 RATING RATIO (copy)_1191272496643702787:qk]>)]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[3 Rating: 	 <[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391512603:qk]> (<[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:4 RATING RATIO (copy)_1191272496643764228:qk]>)]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[2 Rating: 	 <[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391459354:qk]> (<[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:3 RATING RATIO (copy)_1191272496643809285:qk]>)]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[1 Rating: 	 <[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391385625:qk]> (<[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy)_1191272496643944454:qk]>)]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[0 Rating: 	 <[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:Calculation_2179460771391037464:qk]> (<[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[usr:2 RATING RATIO (copy) (copy)_1191272496643964935:qk]>)]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[Your Average Rating:	 <[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[avg:My Rating:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7251380681991577' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='shape' value='square' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Row:ok]</rows>
+        <cols>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Column:ok]</cols>
+      </table>
+      <simple-id uuid='{2EEF354E-62E1-401F-BFF2-FFE99FAE626C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Waffle_Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card mode='radiolist' param='[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[yr:Date Read:ok]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0ap4yo208innyy19pmo5u0tq67kc].[usr:Calculation_1191272496644206600:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Calculation_1768929517616300032:qk]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Calculation_1768929517628383233:qk]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Calculation_2179460771386523650:qk]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Calculation_2179460771386613763:qk]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Calculation_2179460771387785220:qk]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Calculation_2179460771388043269:qk]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Column:ok]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Percentage:qk]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[none:Row:ok]</field>
+            <field>[federated.0ap4yo208innyy19pmo5u0tq67kc].[usr:Calculation_1191272496644206600:nk]</field>
+            <field>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[attr:Author:nk]</field>
+            <field>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[attr:Date Read:ok]</field>
+            <field>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[attr:Title:nk]</field>
+            <field>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[none:Author:nk]</field>
+            <field>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[none:Calculation_2179460771388358665:qk]</field>
+            <field>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[none:Title:nk]</field>
+            <field>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[none:Year Published:qk]</field>
+            <field>[federated.1r9fma00z5yqpa14jtngj0vlgjyk].[yr:Date Read:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F4B80B2F-01BE-4B0E-9CCE-B82412ED94BF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Waffle_Chart' width='192'>
+      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
+      CkBUQwGIav4J3NJvyuZWBZwAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
