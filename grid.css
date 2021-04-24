@@ -1,0 +1,15 @@
+#main {
+  margin-inline: 10%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(4, 20em);
+  padding: 10px;
+  grid-gap: 2em;
+}
+
+.toolbar {
+  margin-block-start: 10em;
+  margin-block-end: 3em;
+  margin-inline: 10%;
+  text-align: center;
+}
