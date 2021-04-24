@@ -1,7 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>BookStats</title>
+  <meta name="description" content="BookStats Visualization">
+  <meta name="author" content="">
+  <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/ico" href="data\img\BookStats.png">
+  <html style="width:100%;height:100%;">
+</head>
   <meta charset="utf-8" />
   <body>
+    <div id="navbar-norm"></div>
     <div class="toolbar">
       <label for="years">Choose a year:</label>
       <select id="years">
@@ -29,5 +41,10 @@
     <script src="fullcalendar/main.js"></script>
 
     <script src="view.js"></script>
+    <script>
+      $.get("navbar.html", function(data){
+          $("#navbar-norm").replaceWith(data);
+      });
+  </script>
   </body>
 </html>
