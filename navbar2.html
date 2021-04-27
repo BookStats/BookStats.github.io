@@ -1,0 +1,127 @@
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"
+></script>
+
+<script type="text/javascript">
+  // jquery ready start
+  $(document).ready(function () {
+    // jQuery code
+
+    //////////////////////// Prevent closing from click inside dropdown
+    $(document).on("click", ".dropdown-menu", function (e) {
+      e.stopPropagation();
+    });
+
+    // make it as accordion for smaller screens
+    if ($(window).width() < 992) {
+      $(".dropdown-menu a").click(function (e) {
+        e.preventDefault();
+        if ($(this).next(".submenu").length) {
+          $(this).next(".submenu").toggle();
+        }
+        $(".dropdown").on("hide.bs.dropdown", function () {
+          $(this).find(".submenu").hide();
+        });
+      });
+    }
+  }); // jquery end
+</script>
+<style type="text/css">
+  @media (min-width: 992px) {
+    body {
+      padding-top: 50px;
+    }
+    .dropdown-menu .dropdown-toggle:after {
+      border-top: 0.3em solid transparent;
+      border-right: 0;
+      border-bottom: 0.3em solid transparent;
+      border-left: 0.3em solid;
+    }
+
+    .dropdown-menu .dropdown-menu {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .dropdown-menu li {
+      position: relative;
+    }
+    .nav-item .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+      background-color: #d99d29;
+    }
+    .nav-item .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    .dropdown-menu > li:hover {
+      background-color: #dc8920;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .navbar-custom {
+      background-color: #d99d29;
+    }
+
+    .dropdown-item:hover {
+      background-color: #dc8920;
+    }
+
+    .navbar-nav > li > .dropdown-menu {
+      background-color: #d99d29;
+    }
+  }
+</style>
+<nav class="navbar navbar-custom fixed-top navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">
+    <img src="data\img\BookStats.png" width="30" height="30" alt="" />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavDropdown"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"
+          >Main View<span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item dropdown active">
+        <a
+          class="nav-link dropdown-toggle"
+          href=""
+          id="navbarNavDropdown"
+          data-toggle="dropdown"
+          >Calendar</a
+        >
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="CalendarView.html">Calendar View</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="detail_view.html">Detail View</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="RatingsView.html"
+          >Overrated/Underrated<span class="sr-only">(current)</span></a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
