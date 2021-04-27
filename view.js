@@ -272,26 +272,30 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       events: events, //TODO: add data
       eventDidMount: function (arg) {
-        if (arg.event.extendedProps.rating == 1)
+        if (arg.event.extendedProps.rating == 0)
           arg.el.getElementsByClassName(
             "fc-list-event-dot"
-          )[0].style.borderColor = "red";
+          )[0].style.borderColor = "#1170AA";
+        else if (arg.event.extendedProps.rating == 1)
+          arg.el.getElementsByClassName(
+            "fc-list-event-dot"
+          )[0].style.borderColor = "#FC7D0B";
         else if (arg.event.extendedProps.rating == 2)
           arg.el.getElementsByClassName(
             "fc-list-event-dot"
-          )[0].style.borderColor = "green";
+          )[0].style.borderColor = "#A3ACB9";
         else if (arg.event.extendedProps.rating == 3)
           arg.el.getElementsByClassName(
             "fc-list-event-dot"
-          )[0].style.borderColor = "blue";
+          )[0].style.borderColor = "#57606C";
         else if (arg.event.extendedProps.rating == 4)
           arg.el.getElementsByClassName(
             "fc-list-event-dot"
-          )[0].style.borderColor = "orange";
+          )[0].style.borderColor = "#5FA2CE";
         else if (arg.event.extendedProps.rating == 5)
           arg.el.getElementsByClassName(
             "fc-list-event-dot"
-          )[0].style.borderColor = "purple";
+          )[0].style.borderColor = "#C85200";
       },
     });
     calendar.render();
