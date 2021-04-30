@@ -5,8 +5,8 @@ import csv
 import json
 
 
-csv_location = "./Goodreads_Library_Data.csv"
-new_csv_location = "./Ratings_Reordered_Goodreads_Library_Data.csv"
+csv_location = "./Person_3.csv"
+new_csv_location = "./Ratings_Reordered_Person_3.csv"
 #Book Id,Title,Author,Author l-f,Additional Authors,ISBN,ISBN13,My Rating,Average Rating,Publisher,Binding,Number of Pages,Year Published,Original Publication Year,Date Read,Date Added,Bookshelves,Bookshelves with positions,Exclusive Shelf,My Review,Spoiler,Private Notes,Read Count,Recommended For,Recommended By,Owned Copies,Original Purchase Date,Original Purchase Location,Condition,Condition Description,BCID
 
 labels_row = []
